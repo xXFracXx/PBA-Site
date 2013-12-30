@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pok&eacute;mon Battle Arena</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href = "css/bootstrap.min.css" rel = "stylesheet">
+		<link href = "css/styles.css" rel = "stylesheet">
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+	</head>
+	<body>
+		<div class = "navbar navbar-inverse navbar-static-top">
+			<div class = "container">
+			<a href = "index.htm" class = "navbar-brand"><img class="align-center" src="img/favicon.ico"></img> Pok&eacute;mon Battle Arena</a>
+				<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+				</button>
+				<div class = "collapse navbar-collapse navHeaderCollapse">
+					<ul class = "nav navbar-nav navbar-right">
+						<li class = "active"><a href = "index.htm">Home</a></li>
+						<li><a href = "stream.htm">Stream</a></li>
+						<li><a href = "downloads.htm">Downloads</a></li>
+						<li class = "dropdown">
+							<a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">About Us <b class = "caret"></b></a>
+							<ul class = "dropdown-menu">
+								<li><a href = "team.htm">The Team</a></li>
+								<li><a href = "projects.htm">Past Projects</a></li>
+							</ul>
+						</li>
+						<li><a data-toggle="modal" href="#shortModal" >Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<!-- carsolue -->
+
+		<div id="myCarousel" class="carousel slide">
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<img class="img-responsive" src="img/0.png" alt="Image #0">
+				</div>
+				<div class="item">
+					<img class="img-responsive" src="img/1.png" alt="Image #1">
+				</div>
+				<div class="item">
+					<img class="img-responsive" src="img/2.png" alt="Image #2">
+				</div>
+			</div>
+			<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+				<span class="icon-prev"></span>
+			</a>
+			<a class="carousel-control right" href="#myCarousel" data-slide="next">
+				<span class="icon-next"></span>
+			</a>
+		</div>
+
+		<p></p>
+
+		<!-- bottom nav bar -->
+
+		<div class="navbar navbar-default navbar-fixed-bottom">
+			<div class="container">
+				<p class="navbar-text pull-left">Site Built By Shashank Pincha</p>
+				<a href="http://file.shashankpincha.com/7TbO" class = "navbar-btn btn-danger btn pull-right">Download Latest Version</a>
+			</div>
+		</div>
+
+		<!-- Contact us Modal -->
+
+		<div id="shortModal" class="modal modal-wide fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Contact Us</h4>
+					</div>
+					<div class="modal-body text-center">
+						<script type="text/javascript" src="http://form.jotform.me/jsform/33583116291453"></script>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src = "js/bootstrap.js"></script>
+	</body>
+</html>
+
