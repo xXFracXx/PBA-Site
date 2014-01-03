@@ -19,7 +19,7 @@ function updateNewsFeed() {
 
     $.get("https://api.github.com/repos/xXFracXx/PBA/commits", function(data) {
         loading = false;
-        var html = "<table class="table table-rounded" style='width: 100%'>";
+        var html = "<table class='table table-rounded' style='width: 100%'>";
 
         for (var index = 0; index < data.length; index++) {
             commit = data[index];
