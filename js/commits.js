@@ -1,24 +1,14 @@
-var loading = false;
-
 jQuery(document).ready(function($) {
-    window.setInterval(updateNewsFeed, 30 * 1000);
-
-    updateNewsFeed();
+    updateNewsFeed('xxfracxx', 'PBA-WebSite', 'websiteCommits');
+    updateNewsFeed('xxfracxx', 'PBA', 'commits');
 });
 
-function updateNewsFeed() {
-    if (loading) {
-        return;
-    }
-
-    loading = true;
-    var feed = $("#commits");
+function updateNewsFeed(user, repo, div) {
+    var feed = $("#"+div);
     var maxLength = 20;
 
-    feed.html("Loading...");
-
-    $.get("https://api.github.com/repos/xXFracXx/PBA/commits", function(data) {
-        loading = false;
+    feed.html("Loading commits...");
+    $.get("https://api.github.com/repos/"+user+"/"+repo+"/commits", function(data) {
         var html = "<table class='table table-rounded table-striped table-bordered' style='width: 100%'>";
 
         for (var index = 0; index < data.length; index++) {
@@ -32,6 +22,7 @@ function updateNewsFeed() {
             html += "</tr>";
         }
 
-        feed.html(html+"</table>");
+        feed.html(html+"</tbody></table>");
     });
+
 }
