@@ -12,7 +12,7 @@ function updateNewsFeed() {
     }
 
     loading = true;
-    var feed = $("#commits");
+    var feed = $("#commits2");
     var maxLength = 20;
 
     feed.html("Loading...");
